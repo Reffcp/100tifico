@@ -27,9 +27,10 @@ body {
 }
 
 .Characters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  display: grid;
 }
 
 .Characters-inner {
@@ -70,10 +71,9 @@ body {
 
 .Characters-item {
   text-decoration: none;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  margin: 0 10px 20px 0;
-  text-align: center;
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  border-radius: 5px;
+  margin: 0 0 20px 0;
   display: block;
   animation-duration: 2s;
   animation-name: fade;
@@ -90,7 +90,7 @@ body {
   font-weight: 300;
   padding: 5px 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .Characters-item a {
